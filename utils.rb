@@ -10,7 +10,7 @@ module Utils
   end
 
   def self.triplets?(a, b, c)
-    a ** 2 + b ** 2 == c ** 2
+    a**2 + b**2 == c**2
   end
 
   def self.p8

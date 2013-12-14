@@ -1,3 +1,5 @@
+require 'benchmark'
+
 module Utils
   def self.fibonaccis
     Enumerator.new do |y|
@@ -7,10 +9,6 @@ module Utils
         a, b = b, a + b
       end
     end
-  end
-
-  def self.triplets?(a, b, c)
-    a**2 + b**2 == c**2
   end
 
   def self.p8
@@ -35,4 +33,10 @@ module Utils
     '05886116467109405077541002256983155200055935729725'\
     '71636269561882670428252483600823257530420752963450'.split('').map(&:to_i)
   end
+end
+
+def solve(problem, description, &block)
+  puts "##{problem}: #{description}"
+  puts "Duration: #{Benchmark.measure { puts "Solution: #{yield}" }.real}s"
+  puts
 end

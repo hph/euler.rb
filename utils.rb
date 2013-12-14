@@ -37,6 +37,6 @@ end
 
 def solve(problem, description, &block)
   puts "##{problem}: #{description}"
-  puts "Duration: #{Benchmark.measure { puts "Solution: #{yield}" }.real}s"
+  puts 'Duration: %.9f' % Benchmark.measure { puts "Solution: #{yield}" }.real
   puts
 end

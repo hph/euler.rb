@@ -36,7 +36,7 @@ Running `./euler.rb` will show something like this:
 
     #8: Largest product in a series
     Solution: 40824
-    Duration: 0.535733786
+    Duration: 0.001958055
 
     #9: Special Pythagorean triplet
     Solution: 31875000

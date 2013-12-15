@@ -37,8 +37,11 @@ solve 7, '10001st prime' do
 end
 
 solve 8, 'Largest product in a series' do
-  (0..995).map { |i| Utils.p8[i..i + 4] }.reject { |a| a.member?(0) }
-    .max.reduce(:*)
+  digits = Utils.p8_digits
+
+  (0...5).map do |i|
+    digits[i..-1].each_slice(5).reject { |a| a.member?(0) }.max.reduce(:*)
+  end.max
 end
 
 solve 9, 'Special Pythagorean triplet' do

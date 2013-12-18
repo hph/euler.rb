@@ -61,3 +61,7 @@ Running `./euler.rb` will show something like this:
     #29: Distinct powers
     Solution: 9183
     Duration: 0.011728715
+
+    #48: Self powers
+    Solution: 9110846700
+    Duration: 0.009373365

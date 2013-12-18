@@ -57,6 +57,14 @@ solve 10, 'Summation of primes' do
   Prime.take_while { |n| n < 2_000_000 }.reduce(:+)
 end
 
+solve 16, 'Power digit sum' do
+  (2**1000).to_s.split('').map(&:to_i).reduce(:+)
+end
+
+solve 20, 'Factorial digit sum' do
+  Utils.factorial(100).to_s.split('').map(&:to_i).reduce(:+)
+end
+
 solve 25, '1000-digit Fibonacci number' do
   Utils.fibonaccis.take_while { |n| n.to_s.size < 1000 }.size + 1
 end

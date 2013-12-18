@@ -11,6 +11,11 @@ module Utils
     end
   end
 
+  def self.factorial(n)
+    return 1 if n <= 1
+    factorial(n - 1) * n
+  end
+
   def self.p8_digits
     '73167176531330624919225119674426574742355349194934'\
     '96983520312774506326239578318016984801869478851843'\

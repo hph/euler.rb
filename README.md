@@ -46,6 +46,14 @@ Running `./euler.rb` will show something like this:
     Solution: 142913828922
     Duration: 2.886144595
 
+    #16: Power digit sum
+    Solution: 1366
+    Duration: 0.000239166
+
+    #20: Factorial digit sum
+    Solution: 648
+    Duration: 0.000139032
+
     #25: 1000-digit Fibonacci number
     Solution: 4782
     Duration: 0.178224672

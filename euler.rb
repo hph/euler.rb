@@ -68,3 +68,7 @@ end
 solve 25, '1000-digit Fibonacci number' do
   Utils.fibonaccis.take_while { |n| n.to_s.size < 1000 }.size + 1
 end
+
+solve 29, 'Distinct powers' do
+  (2..100).map { |a| (2..100).map { |b| a ** b} }.flatten.uniq.size
+end

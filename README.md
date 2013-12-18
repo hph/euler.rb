@@ -57,3 +57,7 @@ Running `./euler.rb` will show something like this:
     #25: 1000-digit Fibonacci number
     Solution: 4782
     Duration: 0.178224672
+
+    #29: Distinct powers
+    Solution: 9183
+    Duration: 0.011728715

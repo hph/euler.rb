@@ -70,9 +70,9 @@ solve 25, '1000-digit Fibonacci number' do
 end
 
 solve 29, 'Distinct powers' do
-  (2..100).map { |a| (2..100).map { |b| a ** b} }.flatten.uniq.size
+  (2..100).map { |a| (2..100).map { |b| a**b} }.flatten.uniq.size
 end
 
 solve 48, 'Self powers' do
-  (1..1000).map { |n| n ** n }.reduce(:+).to_s[-10..-1]
+  (1..1000).map { |n| n**n }.reduce(:+).to_s[-10..-1]
 end

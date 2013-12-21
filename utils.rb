@@ -56,6 +56,6 @@ end
 
 module Enumerable
   def sum
-    self.reduce(:+)
+    self.reduce(0, :+)
   end
 end

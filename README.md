@@ -7,61 +7,61 @@ higher.
 Running `./euler.rb` will show something like this:
 
     #1: Multiples of 3 and 5
-    Solution: 233168
+    Solution: [REDACTED]
     Duration: 0.000167340
 
     #2: Even Fibonacci numbers
-    Solution: 4613732
+    Solution: [REDACTED]
     Duration: 0.000050125
 
     #3: Largest prime factor
-    Solution: 6857
+    Solution: [REDACTED]
     Duration: 0.000302069
 
     #4: Largest palindrome product
-    Solution: 906609
+    Solution: [REDACTED]
     Duration: 0.286436021
 
     #5: Smallest multiple
-    Solution: 232792560
+    Solution: [REDACTED]
     Duration: 0.000026065
 
     #6: Sum square difference
-    Solution: 24174150
+    Solution: [REDACTED]
     Duration: 0.000036742
 
     #7: 10001st prime
-    Solution: 104743
+    Solution: [REDACTED]
     Duration: 0.079404978
 
     #8: Largest product in a series
-    Solution: 40824
+    Solution: [REDACTED]
     Duration: 0.001958055
 
     #9: Special Pythagorean triplet
-    Solution: 31875000
+    Solution: [REDACTED]
     Duration: 0.230471871
 
     #10: Summation of primes
-    Solution: 142913828922
+    Solution: [REDACTED]
     Duration: 2.886144595
 
     #16: Power digit sum
-    Solution: 1366
+    Solution: [REDACTED]
     Duration: 0.000239166
 
     #20: Factorial digit sum
-    Solution: 648
+    Solution: [REDACTED]
     Duration: 0.000139032
 
     #25: 1000-digit Fibonacci number
-    Solution: 4782
+    Solution: [REDACTED]
     Duration: 0.178224672
 
     #29: Distinct powers
-    Solution: 9183
+    Solution: [REDACTED]
     Duration: 0.011728715
 
     #48: Self powers
-    Solution: 9110846700
+    Solution: [REDACTED]
     Duration: 0.009373365

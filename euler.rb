@@ -1,12 +1,11 @@
 #!/usr/bin/env ruby
 
+require 'set'
 require 'prime'
 require_relative 'utils'
 
 solve 1, 'Multiples of 3 and 5' do
-  multiple_of_3_or_5 = ->(n) { n % 3 == 0 || n % 5 == 0 }
-
-  (0...1000).select(&multiple_of_3_or_5).reduce(:+)
+  (Set.new((0...1000).step(3)) | Set.new((0...1000).step(5))).reduce(:+)
 end
 
 solve 2, 'Even Fibonacci numbers' do

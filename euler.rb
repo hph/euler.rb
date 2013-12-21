@@ -55,6 +55,12 @@ solve 10, 'Summation of primes' do
   Prime.take_while { |n| n < 2_000_000 }.sum
 end
 
+solve 13, '' do
+  numbers = Utils.p13_numbers
+
+  numbers.sum.to_s[0...10]
+end
+
 solve 16, 'Power digit sum' do
   (2**1000).to_s.split('').map(&:to_i).sum
 end

@@ -20,6 +20,10 @@ module Utils
     File.read('data/8.txt').tr("\n", '').split('').map(&:to_i)
   end
 
+  def self.p13_numbers
+    File.read('data/13.txt').split("\n").map(&:to_i)
+  end
+
   def self.p42_chars
     to_ord = ->(s) { s.ord - 64 }
 

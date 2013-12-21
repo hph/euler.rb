@@ -53,3 +53,9 @@ def solve(problem, description, &block)
   puts 'Duration: %.9f' % Benchmark.measure { puts "Solution: #{yield}" }.real
   puts
 end
+
+module Enumerable
+  def sum
+    self.reduce(:+)
+  end
+end

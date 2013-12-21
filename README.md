@@ -62,6 +62,10 @@ Running `./euler.rb` will show something like this:
     Solution: [REDACTED]
     Duration: 0.011728715
 
+    #42: Coded triangle numbers
+    Solution: [REDACTED]
+    Duration: 0.013851489
+
     #48: Self powers
     Solution: [REDACTED]
     Duration: 0.009373365

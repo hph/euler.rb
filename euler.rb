@@ -73,6 +73,13 @@ solve 29, 'Distinct powers' do
   (2..100).map { |a| (2..100).map { |b| a**b} }.flatten.uniq.size
 end
 
+solve 42, 'Coded triangle numbers' do
+  words = Utils.p42_chars
+  triangles = (1..26).map { |n| (0.5 * n * (n + 1)).to_i }
+
+  words.map { |n| n.reduce(:+) }.select { |n| triangles.member?(n) }.size
+end
+
 solve 48, 'Self powers' do
   (1..1000).map { |n| n**n }.reduce(:+).to_s[-10..-1]
 end

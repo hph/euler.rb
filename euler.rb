@@ -29,7 +29,7 @@ solve 5, 'Smallest multiple' do
 end
 
 solve 6, 'Sum square difference' do
-  (1...100).reduce(:+)**2 - (1...100).map { |n| n**2 }.reduce(:+)
+  (1..100).reduce(:+)**2 - (1..100).map { |n| n**2 }.reduce(:+)
 end
 
 solve 7, '10001st prime' do

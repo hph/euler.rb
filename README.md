@@ -47,7 +47,7 @@ Running `./euler.rb` will show something like this:
     Solution: [REDACTED]
     Duration: 2.886144595
 
-    #13:
+    #13: Large sum
     Solution: [REDACTED]
     Duration: 0.000227000
 

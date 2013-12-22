@@ -56,7 +56,7 @@ solve 10, 'Summation of primes' do
   Prime.take_while { |n| n < 2_000_000 }.sum
 end
 
-solve 13, '' do
+solve 13, 'Large sum' do
   numbers = Utils.p13_numbers
 
   numbers.sum.to_s[0...10]

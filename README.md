@@ -55,7 +55,7 @@ Running `./euler.rb` will show something like this:
     Solution: [REDACTED]
     Duration: 11.881391000
 
-    #15:
+    #15: Lattice paths
     Solution: [REDACTED]
     Duration: 0.000022000
 

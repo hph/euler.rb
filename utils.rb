@@ -11,11 +11,6 @@ module Utils
     end
   end
 
-  def self.factorial(n)
-    return 1 if n <= 1
-    factorial(n - 1) * n
-  end
-
   def self.p8_digits
     File.read('data/8.txt').tr("\n", '').split('').map(&:to_i)
   end
@@ -48,5 +43,10 @@ end
 class Integer
   def choose(k)
     (self - k + 1..self).reduce(1, :*) / (2..k).reduce(1, :*)
+  end
+
+  def factorial
+    return 1 if self <= 1
+    (self - 1).factorial * self
   end
 end

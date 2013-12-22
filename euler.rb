@@ -70,7 +70,7 @@ solve 16, 'Power digit sum' do
 end
 
 solve 20, 'Factorial digit sum' do
-  Utils.factorial(100).to_s.split('').map(&:to_i).sum
+  100.factorial.to_s.split('').map(&:to_i).sum
 end
 
 solve 25, '1000-digit Fibonacci number' do

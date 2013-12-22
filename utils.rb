@@ -44,3 +44,9 @@ module Enumerable
     self.reduce(0, :+)
   end
 end
+
+class Integer
+  def choose(k)
+    (self - k + 1..self).reduce(1, :*) / (2..k).reduce(1, :*)
+  end
+end

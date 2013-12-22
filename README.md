@@ -50,6 +50,10 @@ Running `./euler.rb` will show something like this:
     Solution: [REDACTED]
     Duration: 0.000227000
 
+    #15:
+    Solution: [REDACTED]
+    Duration: 0.000022000
+
     #16: Power digit sum
     Solution: [REDACTED]
     Duration: 0.000239166

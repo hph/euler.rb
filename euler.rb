@@ -61,6 +61,10 @@ solve 13, '' do
   numbers.sum.to_s[0...10]
 end
 
+solve 15, 'Lattice paths' do
+  40.choose(20)
+end
+
 solve 16, 'Power digit sum' do
   (2**1000).to_s.split('').map(&:to_i).sum
 end

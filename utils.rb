@@ -19,6 +19,10 @@ module Utils
     File.read('data/13.txt').lines.map(&:to_i)
   end
 
+  def self.p18_numbers
+    File.read('data/18.txt').lines.map { |l| l[0..-1].split.map(&:to_i) }
+  end
+
   def self.p42_chars
     to_ord = ->(s) { s.ord - 64 }
 

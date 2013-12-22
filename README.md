@@ -59,6 +59,10 @@ Running `./euler.rb` will show something like this:
     Solution: [REDACTED]
     Duration: 0.000239166
 
+    #18: Maximum path sum I
+    Solution: [REDACTED]
+    Duration: 0.000195000
+
     #17: Number letter counts
     Solution: [REDACTED]
     Duration: 0.002920000

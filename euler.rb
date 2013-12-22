@@ -74,6 +74,17 @@ solve 17, 'Number letter counts' do
   (1..1000).map(&:humanize).map { |s| s.tr(' ', '').tr('-', '') }.join.size
 end
 
+solve 18, 'Maximum path sum I' do
+  numbers = Utils.p18_numbers
+
+  (2..numbers.size).map do |i|
+    (1..numbers[-i].size).map do |j|
+      numbers[-i][j - 1] += [numbers[-i + 1][j - 1], numbers[-i + 1][j]].max
+    end
+  end
+  numbers.first.first
+end
+
 solve 20, 'Factorial digit sum' do
   100.factorial.digits.sum
 end

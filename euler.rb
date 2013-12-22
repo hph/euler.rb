@@ -64,11 +64,11 @@ solve 15, 'Lattice paths' do
 end
 
 solve 16, 'Power digit sum' do
-  (2**1000).to_s.split('').map(&:to_i).sum
+  (2**1000).digits.sum
 end
 
 solve 20, 'Factorial digit sum' do
-  100.factorial.to_s.split('').map(&:to_i).sum
+  100.factorial.digits.sum
 end
 
 solve 25, '1000-digit Fibonacci number' do

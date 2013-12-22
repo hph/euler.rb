@@ -62,6 +62,10 @@ solve 13, 'Large sum' do
   numbers.sum.to_s[0...10]
 end
 
+solve 14, 'Longest Collatz sequence' do
+  (1..1_000_000).map { |n| [Utils.collatz_sequence_size(n), n] }.max.last
+end
+
 solve 15, 'Lattice paths' do
   40.choose(20)
 end

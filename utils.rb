@@ -11,6 +11,20 @@ module Utils
     end
   end
 
+  def self.collatz_sequence_size(n, cache={})
+    return cache[n] unless cache[n].nil?
+    size = 1
+    while n != 1
+      if n.even?
+        n = n / 2
+      else
+        n = 3 * n + 1
+      end
+      size += 1
+    end
+    cache[n] = size
+  end
+
   def self.p8_digits
     File.read('data/8.txt').tr("\n", '').chars.map(&:to_i)
   end

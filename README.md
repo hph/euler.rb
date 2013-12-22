@@ -51,6 +51,10 @@ Running `./euler.rb` will show something like this:
     Solution: [REDACTED]
     Duration: 0.000227000
 
+    #14: Longest Collatz sequence
+    Solution: [REDACTED]
+    Duration: 11.881391000
+
     #15:
     Solution: [REDACTED]
     Duration: 0.000022000

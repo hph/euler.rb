@@ -17,10 +17,8 @@ solve 3, 'Largest prime factor' do
 end
 
 solve 4, 'Largest palindrome product' do
-  palindrome = ->(n) { n.to_s == n.to_s.reverse }
-
   (100..999).map { |a| (a..999).map { |b| a * b } }
-    .flatten.select(&palindrome).max
+    .flatten.select(&:palindrome?).max
 end
 
 solve 5, 'Smallest multiple' do

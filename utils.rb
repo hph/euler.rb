@@ -49,4 +49,8 @@ class Integer
     return 1 if self <= 1
     (self - 1).factorial * self
   end
+
+  def palindrome?
+    self.to_s == self.to_s.reverse
+  end
 end

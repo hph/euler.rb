@@ -2,7 +2,8 @@ euler.rb
 ========
 
 Solutions to Project Euler problems in functional Ruby. Requires Ruby v2.0 or
-higher.
+higher. You will need to run `bundle` to install dependencies before running
+the program.
 
 Running `./euler.rb` will show something like this:
 
@@ -57,6 +58,10 @@ Running `./euler.rb` will show something like this:
     #16: Power digit sum
     Solution: [REDACTED]
     Duration: 0.000239166
+
+    #17: Number letter counts
+    Solution: [REDACTED]
+    Duration: 0.002920000
 
     #20: Factorial digit sum
     Solution: [REDACTED]

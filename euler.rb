@@ -2,6 +2,9 @@
 
 require 'set'
 require 'prime'
+
+require 'humanize'
+
 require_relative 'utils'
 
 solve 1, 'Multiples of 3 and 5' do
@@ -65,6 +68,10 @@ end
 
 solve 16, 'Power digit sum' do
   (2**1000).digits.sum
+end
+
+solve 17, 'Number letter counts' do
+  (1..1000).map(&:humanize).map { |s| s.tr(' ', '').tr('-', '') }.join.size
 end
 
 solve 20, 'Factorial digit sum' do

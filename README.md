@@ -7,86 +7,94 @@ the program.
 
 Running `./euler.rb` will show something like this:
 
-    #1: Multiples of 3 and 5
+    #1: Multiples of 3 and 5 (using Enumerable#select)
     Solution: [REDACTED]
-    Duration: 0.000167340
+    Duration: 0.000298000
+
+    #1: Multiples of 3 and 5 (using Array#uniq)
+    Solution: [REDACTED]
+    Duration: 0.000318000
+
+    #1: Multiples of 3 and 5 (using Set#union)
+    Solution: [REDACTED]
+    Duration: 0.000489000
 
     #2: Even Fibonacci numbers
     Solution: [REDACTED]
-    Duration: 0.000050125
+    Duration: 0.000088000
 
     #3: Largest prime factor
     Solution: [REDACTED]
-    Duration: 0.000302069
+    Duration: 0.000438000
 
     #4: Largest palindrome product
     Solution: [REDACTED]
-    Duration: 0.286436021
+    Duration: 0.380974000
 
     #5: Smallest multiple
     Solution: [REDACTED]
-    Duration: 0.000026065
+    Duration: 0.000019000
 
     #6: Sum square difference
     Solution: [REDACTED]
-    Duration: 0.000036742
+    Duration: 0.000044000
 
     #7: 10001st prime
     Solution: [REDACTED]
-    Duration: 0.079404978
+    Duration: 0.090762000
 
     #8: Largest product in a series
     Solution: [REDACTED]
-    Duration: 0.001958055
+    Duration: 0.001688000
 
     #9: Special Pythagorean triplet
     Solution: [REDACTED]
-    Duration: 0.230471871
+    Duration: 0.310019000
 
     #10: Summation of primes
     Solution: [REDACTED]
-    Duration: 2.886144595
+    Duration: 3.015938000
 
     #13: Large sum
     Solution: [REDACTED]
-    Duration: 0.000227000
+    Duration: 0.000226000
 
     #14: Longest Collatz sequence
     Solution: [REDACTED]
-    Duration: 11.881391000
+    Duration: 11.890949000
 
     #15: Lattice paths
     Solution: [REDACTED]
-    Duration: 0.000022000
+    Duration: 0.000031000
 
     #16: Power digit sum
     Solution: [REDACTED]
-    Duration: 0.000239166
-
-    #18: Maximum path sum I
-    Solution: [REDACTED]
-    Duration: 0.000195000
+    Duration: 0.000480000
 
     #17: Number letter counts
     Solution: [REDACTED]
-    Duration: 0.002920000
+    Duration: 0.002737000
+
+    #18: Maximum path sum I
+    Solution: [REDACTED]
+    Duration: 0.000180000
 
     #20: Factorial digit sum
     Solution: [REDACTED]
-    Duration: 0.000139032
+    Duration: 0.000090000
 
     #25: 1000-digit Fibonacci number
     Solution: [REDACTED]
-    Duration: 0.178224672
+    Duration: 0.239499000
 
     #29: Distinct powers
     Solution: [REDACTED]
-    Duration: 0.011728715
+    Duration: 0.027773000
 
     #42: Coded triangle numbers
     Solution: [REDACTED]
-    Duration: 0.013851489
+    Duration: 0.014620000
 
     #48: Self powers
     Solution: [REDACTED]
-    Duration: 0.009373365
+    Duration: 0.050789000

@@ -1,13 +1,21 @@
 #!/usr/bin/env ruby
 
-require 'set'
 require 'prime'
+require 'set'
 
 require 'humanize'
 
 require_relative 'utils'
 
-solve 1, 'Multiples of 3 and 5' do
+solve 1, 'Multiples of 3 and 5 (using Enumerable#select)' do
+  (0...1000).select { |n| n % 3 == 0 || n % 5 == 0 }.sum
+end
+
+solve 1, 'Multiples of 3 and 5 (using Array#uniq)' do
+  [*(0...1000).step(3), *(0...1000).step(5)].uniq.sum
+end
+
+solve 1, 'Multiples of 3 and 5 (using Set#union)' do
   (Set.new((0...1000).step(3)) | Set.new((0...1000).step(5))).sum
 end
 

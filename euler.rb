@@ -8,15 +8,15 @@ require 'humanize'
 require_relative 'utils'
 
 solve 1, 'Multiples of 3 and 5 (using Enumerable#select)' do
-  (0...1000).select { |n| n % 3 == 0 || n % 5 == 0 }.sum
+  (0..999).select { |n| n % 3 == 0 || n % 5 == 0 }.sum
 end
 
 solve 1, 'Multiples of 3 and 5 (using Array#uniq)' do
-  [*(0...1000).step(3), *(0...1000).step(5)].uniq.sum
+  [*(0..999).step(3), *(0..999).step(5)].uniq.sum
 end
 
 solve 1, 'Multiples of 3 and 5 (using Set#union)' do
-  (Set.new((0...1000).step(3)) | Set.new((0...1000).step(5))).sum
+  (Set.new((0..999).step(3)) | Set.new((0..999).step(5))).sum
 end
 
 solve 2, 'Even Fibonacci numbers' do
@@ -47,7 +47,7 @@ end
 solve 8, 'Largest product in a series' do
   digits = Utils.p8_digits
 
-  (0...5).map do |i|
+  (0..4).map do |i|
     digits[i..-1].each_slice(5).reject { |a| a.member?(0) }.max.sum
   end.max
 end
@@ -57,7 +57,7 @@ solve 9, 'Special Pythagorean triplet' do
     a**2 + b**2 == (1000 - a - b)**2 ? [a, b, 1000 - a - b] : []
   end
 
-  (1...1000).map { |a| (1..a).map { |b| triplets.call(a, b) } }.flatten.sum
+  (1..999).map { |a| (1..a).map { |b| triplets.call(a, b) } }.flatten.sum
 end
 
 solve 10, 'Summation of primes' do
@@ -67,7 +67,7 @@ end
 solve 13, 'Large sum' do
   numbers = Utils.p13_numbers
 
-  numbers.sum.to_s[0...10]
+  numbers.sum.to_s[0..9]
 end
 
 solve 14, 'Longest Collatz sequence' do

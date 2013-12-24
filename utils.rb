@@ -73,6 +73,12 @@ class Integer
   end
 
   def palindrome?
-    self.to_s == self.to_s.reverse
+    self.to_s.palindrome?
+  end
+end
+
+class String
+  def palindrome?
+    self == self.reverse
   end
 end

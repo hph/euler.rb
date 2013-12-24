@@ -29,7 +29,7 @@ Running `./euler.rb` will show something like this:
 
     #4: Largest palindrome product
     Solution: [REDACTED]
-    Duration: 0.380974000
+    Duration: 0.289089000
 
     #5: Smallest multiple
     Solution: [REDACTED]
@@ -90,6 +90,10 @@ Running `./euler.rb` will show something like this:
     #29: Distinct powers
     Solution: [REDACTED]
     Duration: 0.027773000
+
+    #36: Double-base palindromes
+    Solution: [REDACTED]
+    Duration: 0.519994000
 
     #42: Coded triangle numbers
     Solution: [REDACTED]

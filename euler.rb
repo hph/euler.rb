@@ -109,6 +109,10 @@ solve 29, 'Distinct powers' do
   (2..100).map { |a| (2..100).map { |b| a**b} }.flatten.uniq.size
 end
 
+solve 36, 'Double-base palindromes' do
+  (0..999_999).select(&:palindrome?).select { |n| n.to_s(2).palindrome? }.sum
+end
+
 solve 42, 'Coded triangle numbers' do
   words = Utils.p42_chars
   triangles = (1..26).map { |n| (0.5 * n * (n + 1)).to_i }

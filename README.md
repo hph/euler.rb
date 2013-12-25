@@ -102,3 +102,5 @@ Running `./euler.rb` will show something like this:
     #48: Self powers
     Solution: [REDACTED]
     Duration: 0.050789000
+
+    Total duration: 16.837

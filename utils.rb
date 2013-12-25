@@ -46,6 +46,10 @@ module Utils
   end
 end
 
+def problems(&block)
+  puts 'Total duration: %.3f' % Benchmark.measure { yield }.real
+end
+
 def solve(problem, description, &block)
   puts "##{problem}: #{description}"
   puts 'Duration: %.9f' % Benchmark.measure { puts "Solution: #{yield}" }.real

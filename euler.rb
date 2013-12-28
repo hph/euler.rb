@@ -29,7 +29,7 @@ problems do
   end
 
   solve 4, 'Largest palindrome product' do
-    [*(100..999)].combination(2).map { |a, b| a * b }.select(&:palindrome?).max
+    [*(100..999)].combination(2).map(&:mult).select(&:palindrome?).max
   end
 
   solve 5, 'Smallest multiple' do
@@ -47,14 +47,14 @@ problems do
   solve 8, 'Largest product in a series' do
     digits = Utils.p8_digits
 
-    digits.each_cons(5).map { |d| d.reduce(:*) }.max
+    digits.each_cons(5).map(&:mult).max
   end
 
   solve 9, 'Special Pythagorean triplet' do
     triplet = ->(a) { a[0]**2 + a[1]**2 == a[2]**2 }
 
     (334..500).flat_map { |a| (1...a).map { |b| [a, b, 1000 - a - b] } }
-      .select(&triplet).flatten.reduce(:*)
+      .select(&triplet).flatten.mult
   end
 
   solve 10, 'Summation of primes' do

@@ -86,3 +86,9 @@ class String
     self == self.reverse
   end
 end
+
+class Array
+  def mult
+    self.reduce(:*)
+  end
+end

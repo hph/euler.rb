@@ -29,8 +29,7 @@ problems do
   end
 
   solve 4, 'Largest palindrome product' do
-    (100..999).map { |a| (a..999).map { |b| a * b } }
-      .flatten.select(&:palindrome?).max
+    [*(100..999)].combination(2).map { |a, b| a * b }.select(&:palindrome?).max
   end
 
   solve 5, 'Smallest multiple' do

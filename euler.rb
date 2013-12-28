@@ -51,12 +51,10 @@ problems do
   end
 
   solve 9, 'Special Pythagorean triplet' do
-    triplets = ->(a, b) do
-      a**2 + b**2 == (1000 - a - b)**2 ? [a, b, 1000 - a - b] : []
-    end
+    triplet = ->(a) { a[0]**2 + a[1]**2 == a[2]**2 }
 
-    (334..500).map { |a| (1..a).map { |b| triplets.call(a, b) } }.flatten
-      .reduce(:*)
+    (334..500).flat_map { |a| (1...a).map { |b| [a, b, 1000 - a - b] } }
+      .select(&triplet).flatten.reduce(:*)
   end
 
   solve 10, 'Summation of primes' do

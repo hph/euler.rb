@@ -100,6 +100,10 @@ problems do
     100.factorial.digits.sum
   end
 
+  solve 24, 'Lexicographic permutations' do
+    (0..9).to_a.permutation.lazy.drop(999_999).first.join
+  end
+
   solve 25, '1000-digit Fibonacci number' do
     Utils.fibonaccis.take_while { |n| n.to_s.size < 1000 }.size + 1
   end

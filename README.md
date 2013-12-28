@@ -83,6 +83,10 @@ Running `./euler.rb` will show something like this:
     Solution: [REDACTED]
     Duration: 0.000090000
 
+    #24: Lexicographic permutations
+    Solution: [REDACTED]
+    Duration: 0.400914000
+
     #25: 1000-digit Fibonacci number
     Solution: [REDACTED]
     Duration: 0.239499000

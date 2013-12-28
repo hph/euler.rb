@@ -47,9 +47,8 @@ problems do
 
   solve 8, 'Largest product in a series' do
     digits = Utils.p8_digits
-
     (0..4).map do |i|
-      digits[i..-1].each_slice(5).reject { |a| a.member?(0) }.max.sum
+      digits[i..-1].each_slice(5).reject { |a| a.member?(0) }.max.reduce(:*)
     end.max
   end
 

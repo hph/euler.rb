@@ -55,7 +55,7 @@ problems do
       a**2 + b**2 == (1000 - a - b)**2 ? [a, b, 1000 - a - b] : []
     end
 
-    (1..999).map { |a| (1..a).map { |b| triplets.call(a, b) } }.flatten
+    (334..500).map { |a| (1..a).map { |b| triplets.call(a, b) } }.flatten
       .reduce(:*)
   end
 

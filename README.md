@@ -49,7 +49,7 @@ Running `./euler.rb` will show something like this:
 
     #9: Special Pythagorean triplet
     Solution: [REDACTED]
-    Duration: 0.310019000
+    Duration: 0.045403000
 
     #10: Summation of primes
     Solution: [REDACTED]

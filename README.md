@@ -126,15 +126,15 @@ You may specify a range of problems to solve:
 
     ./euler.rb  2..4
     #2: Even Fibonacci numbers
-    Solution: 4613732
+    Solution: [REDACTED]
     Duration: 0.000059000
 
     #3: Largest prime factor
-    Solution: 6857
+    Solution: [REDACTED]
     Duration: 0.000399000
 
     #4: Largest palindrome product
-    Solution: 906609
+    Solution: [REDACTED]
     Duration: 0.369261000
 
     Total duration: 0.380
@@ -143,15 +143,15 @@ You may also specify a comma-separated list of problems to solve:
 
     ./euler.rb 2,3,5
     #2: Even Fibonacci numbers
-    Solution: 4613732
+    Solution: [REDACTED]
     Duration: 0.000054000
 
     #3: Largest prime factor
-    Solution: 6857
+    Solution: [REDACTED]
     Duration: 0.000466000
 
     #5: Smallest multiple
-    Solution: 232792560
+    Solution: [REDACTED]
     Duration: 0.000016000
 
     Total duration: 0.370

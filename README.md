@@ -1,9 +1,14 @@
 euler.rb
 ========
 
-Solutions to Project Euler problems in functional Ruby. Requires Ruby v2.0 or
-higher. You will need to run `bundle` to install dependencies before running
-the program.
+Solutions to Project Euler problems in functional Ruby.
+
+The solutions aim to be concise and readable but not necessarily optimized and
+fast. Some of the problems have more than one solution to illustrate different
+algorithms or language features.
+
+You will need to run `bundle` to install dependencies before running the
+program (requires Ruby v2.1.0 or higher).
 
 Running `./euler.rb` will show something like this:
 

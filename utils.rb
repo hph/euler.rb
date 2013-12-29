@@ -79,13 +79,7 @@ class Integer
   end
 
   def digits
-    n = self
-    d = []
-    until n == 0
-      n, m = n.divmod(10)
-      d << m
-    end
-    d
+    self.to_s.chars.map(&:to_i)
   end
 
   def palindrome?

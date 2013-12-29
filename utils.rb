@@ -85,6 +85,11 @@ class Integer
   def palindrome?
     self.to_s.palindrome?
   end
+
+  def rotations
+    digits = self.digits
+    (0...digits.size).map { |n| digits.rotate(n).join.to_i }
+  end
 end
 
 class String

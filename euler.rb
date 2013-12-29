@@ -115,6 +115,12 @@ problems do
     (2..100).map { |a| (2..100).map { |b| a**b} }.flatten.uniq.size
   end
 
+  solve 35, 'Circular primes' do
+    Prime.take_while { |n| n < 2_000_000 }
+      .reject { |m| [0, 2, 5].any? { |o| m.digits.member?(o) } }
+      .select { |m| m.rotations.all? { |o| o.prime? } }.size + [2, 5].size
+  end
+
   solve 36, 'Double-base palindromes' do
     (0..999_999).select(&:palindrome?).select { |n| n.to_s(2).palindrome? }.sum
   end

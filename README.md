@@ -99,6 +99,10 @@ Running `./euler.rb` will show something like this:
     Solution: [REDACTED]
     Duration: 0.014427000
 
+    #35: Circular primes
+    Solution: [REDACTED]
+    Duration: 11.161226000
+
     #36: Double-base palindromes
     Solution: [REDACTED]
     Duration: 0.451829000
@@ -111,7 +115,7 @@ Running `./euler.rb` will show something like this:
     Solution: [REDACTED]
     Duration: 0.011340000
 
-    Total duration: 12.917
+    Total duration: 24.078
 
 You may specify a range of problems to solve:
 

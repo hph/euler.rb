@@ -47,10 +47,16 @@ module Utils
 end
 
 def problems(&block)
+  @problems = if ARGV.first.include?('.')
+                Range.new(*ARGV.first.split('..').map(&:to_i))
+              else
+                @problems = ARGV.first.split(',').map(&:to_i)
+              end unless ARGV.empty?
   puts 'Total duration: %.3f' % Benchmark.measure { yield }.real
 end
 
 def solve(problem, description, &block)
+  return if @problems && !@problems.member?(problem)
   puts "##{problem}: #{description}"
   puts 'Duration: %.9f' % Benchmark.measure { puts "Solution: #{yield}" }.real
   puts

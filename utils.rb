@@ -98,3 +98,9 @@ class Array
     self.reduce(:*)
   end
 end
+
+class Range
+  def product(iterable)
+    self.to_a.product(iterable.to_a)
+  end
+end

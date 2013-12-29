@@ -96,11 +96,7 @@ problems do
   end
 
   solve 19, 'Counting Sundays' do
-    (1901..2000).flat_map do |y|
-      (1..12).select do |m|
-        Date.new(y, m, 1).sunday?
-      end
-    end.size
+    (1901..2000).product(1..12).select { |a, b| Date.new(a, b, 1).sunday? }.size
   end
 
   solve 20, 'Factorial digit sum' do

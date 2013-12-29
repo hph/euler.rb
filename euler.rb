@@ -1,5 +1,6 @@
 #!/usr/bin/env ruby
 
+require 'date'
 require 'prime'
 require 'set'
 
@@ -92,6 +93,14 @@ problems do
       end
     end
     numbers.first.first
+  end
+
+  solve 19, 'Counting Sundays' do
+    (1901..2000).flat_map do |y|
+      (1..12).select do |m|
+        Date.new(y, m, 1).sunday?
+      end
+    end.size
   end
 
   solve 20, 'Factorial digit sum' do

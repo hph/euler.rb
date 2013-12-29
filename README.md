@@ -79,6 +79,10 @@ Running `./euler.rb` will show something like this:
     Solution: [REDACTED]
     Duration: 0.000180000
 
+    #19: Counting Sundays
+    Solution: 171
+    Duration: 0.000622000
+
     #20: Factorial digit sum
     Solution: [REDACTED]
     Duration: 0.000090000

@@ -134,8 +134,7 @@ problems do
 
   solve 47, 'Distinct prime factors' do
     (1..Float::INFINITY).each_cons(4)
-      .take_while { |n| n.map(&:prime_division).map(&:size) != [4,4,4,4] }
-      .last[1]
+      .detect { |n| n.map(&:prime_division).map(&:size) == [4, 4, 4, 4] }.first
   end
 
   solve 48, 'Self powers' do

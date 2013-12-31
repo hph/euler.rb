@@ -132,6 +132,12 @@ problems do
     words.map(&:sum).select { |n| triangles.member?(n) }.size
   end
 
+  solve 47, 'Distinct prime factors' do
+    (1..Float::INFINITY).each_cons(4)
+      .take_while { |n| n.map(&:prime_division).map(&:size) != [4,4,4,4] }
+      .last[1]
+  end
+
   solve 48, 'Self powers' do
     (1..1000).map { |n| n**n }.sum.to_s[-10..-1]
   end

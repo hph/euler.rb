@@ -116,11 +116,15 @@ Running `./euler.rb` will show something like this:
     Solution: [REDACTED]
     Duration: 0.007511000
 
+    #47: Distinct prime factors
+    Solution: [REDACTED]
+    Duration: 16.250068000
+
     #48: Self powers
     Solution: [REDACTED]
     Duration: 0.011340000
 
-    Total duration: 24.078
+    Total duration: 40.328
 
 You may specify a range of problems to solve:
 

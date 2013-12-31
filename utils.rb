@@ -94,8 +94,14 @@ class Integer
 
   @@factors = {}
   def prime_division(generator = Prime::Generator23.new)
-    return @@factors[self] unless @@factors[self].nil?
+    return @@factors[self] if @@factors.key?(self)
     @@factors[self] = Prime.prime_division(self, generator)
+  end
+
+  @@primes = {}
+  def prime?
+    return @@primes[self] if @@factors.key?(self)
+    @@primes[self] = Prime.prime?(self)
   end
 end
 

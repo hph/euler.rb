@@ -106,7 +106,7 @@ Running `./euler.rb` will show something like this:
 
     #35: Circular primes
     Solution: [REDACTED]
-    Duration: 11.161226000
+    Duration: 8.827861000
 
     #36: Double-base palindromes
     Solution: [REDACTED]
@@ -118,13 +118,13 @@ Running `./euler.rb` will show something like this:
 
     #47: Distinct prime factors
     Solution: [REDACTED]
-    Duration: 5.378129000
+    Duration: 4.135602000
 
     #48: Self powers
     Solution: [REDACTED]
     Duration: 0.011340000
 
-    Total duration: 29.456
+    Total duration: 25.880
 
 You may specify a range of problems to solve:
 

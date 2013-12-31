@@ -118,7 +118,7 @@ problems do
   solve 35, 'Circular primes' do
     Prime.take_while { |n| n < 2_000_000 }
       .reject { |m| [0, 2, 5].any? { |o| m.digits.member?(o) } }
-      .select { |m| m.rotations.all? { |o| o.prime? } }.size + [2, 5].size
+      .select { |m| m.rotations.all?(&:prime?) }.size + [2, 5].size
   end
 
   solve 36, 'Double-base palindromes' do

@@ -1,4 +1,5 @@
 require 'benchmark'
+require 'prime'
 
 module Utils
   def self.fibonaccis
@@ -89,6 +90,12 @@ class Integer
   def rotations
     digits = self.digits
     (0...digits.size).map { |n| digits.rotate(n).join.to_i }
+  end
+
+  @@factors = {}
+  def prime_division(generator = Prime::Generator23.new)
+    return @@factors[self] unless @@factors[self].nil?
+    @@factors[self] = Prime.prime_division(self, generator)
   end
 end
 

@@ -100,7 +100,7 @@ class Integer
 
   @@primes = {}
   def prime?
-    return @@primes[self] if @@factors.key?(self)
+    return @@primes[self] if @@primes.key?(self)
     @@primes[self] = Prime.prime?(self)
   end
 end
